@@ -25,7 +25,9 @@ endif ()
 message(STATUS "C++ Compiler ID: ${CMAKE_CXX_COMPILER_ID}")
 message(STATUS "C++ Flags: ${CMAKE_CXX_FLAGS} linker flags: ${CMAKE_CXX_LINK_FLAGS}")
 
-set(PROBLEMS problem1)
+set(PROBLEMS problem1 problem2)
+
+add_subdirectory(deps/athene)
 
 foreach (problem ${PROBLEMS})
   add_subdirectory(${problem})
