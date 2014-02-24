@@ -7,19 +7,18 @@ My Project Euler solutions.
 
 ## Prerequisites
 The project uses cmake. (http://www.cmake.org)
-After cloning, you also have to get the athene git submodule.
+After cloning, you also have to get the [athene](https://github.com/simonracz/athene) git submodule.
 <pre>
 euler$ git submodule init
 euler$ git submodule update
 </pre>
 
-### Building
+## Building
 <pre>
 euler$ mkdir build
 euler$ cd build
 build$ cmake ..
 build$ make
-build$ make test
 </pre>
 
 OR
