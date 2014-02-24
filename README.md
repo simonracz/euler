@@ -1,4 +1,4 @@
-![euler](eueler.jpg)
+![euler](euler.jpg)
 
 Euler
 =====
