@@ -10,16 +10,13 @@ int main(int argc, char* argv[]) {
 	using athene::fibonacci2;
 	
 	int index = 1;
-	for (; fibonacci2(index+1) < limit; ++index);
+	for (; fibonacci2(index) < limit; ++index);
 	
-	std::cout << index << "\n" << fibonacci2(index) << "\n" << fibonacci2(index+1) << "\n";
+	long long sum = 0;
 	
-	if ((index%2) != 0) {
-		--index;
+	for (int i=3; i<index; i+=3) {
+		sum+=fibonacci2(i);
 	}
-	
-	//SUM_2->2n (F_i) = F_2n+2 - F_2n - 1
-	long long sum = fibonacci2(index+2) - fibonacci2(index) - 1;
 	
 	std::cout << sum;
 }
