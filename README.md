@@ -27,5 +27,5 @@ OR
 euler$ mkdir build
 euler$ cd build
 build$ cmake .. -G Xcode
-build$ open ./ATHENE.xcodeproj
+build$ open ./EULER.xcodeproj
 </pre>
