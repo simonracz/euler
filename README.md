@@ -1,3 +1,5 @@
+![euler](eueler.jpg)
+
 Euler
 =====
 
