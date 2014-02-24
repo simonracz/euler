@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
-project(ATHENE)
+project(EULER)
 
-option(ATHENE_BUILD_TESTS "Build the unit tests." OFF)
+option(EULER_BUILD_TESTS "Build the unit tests." OFF)
 
 if (${CMAKE_CXX_COMPILER_ID} MATCHES GNU)
   include(CheckCXXCompilerFlag)
@@ -25,14 +25,10 @@ endif ()
 message(STATUS "C++ Compiler ID: ${CMAKE_CXX_COMPILER_ID}")
 message(STATUS "C++ Flags: ${CMAKE_CXX_FLAGS} linker flags: ${CMAKE_CXX_LINK_FLAGS}")
 
-if (ATHENE_BUILD_TESTS)
-  enable_testing()
-endif()
-
 set(PROBLEMS problem1)
 
 foreach (problem ${PROBLEMS})
-  add_subdirectory(problem)
+  add_subdirectory(${problem})
 endforeach (problem)
 
 
