@@ -1,0 +1,3 @@
+[submodule "deps/athene"]
+	path = deps/athene
+	url = https://github.com/simonracz/athene.git
