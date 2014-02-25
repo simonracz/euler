@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <prime_numbers.hpp>
+#include <numeric>
 
 int main(int argc, char* argv[]) {
 

@@ -26,7 +26,7 @@ message(STATUS "C++ Compiler ID: ${CMAKE_CXX_COMPILER_ID}")
 message(STATUS "C++ Flags: ${CMAKE_CXX_FLAGS} linker flags: ${CMAKE_CXX_LINK_FLAGS}")
 
 set(PROBLEMS problem1 problem2 problem3 problem4 problem5
-       	problem6)
+       	problem6 problem7)
 
 add_subdirectory(deps/athene)
 
