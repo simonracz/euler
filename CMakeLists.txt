@@ -25,8 +25,11 @@ endif ()
 message(STATUS "C++ Compiler ID: ${CMAKE_CXX_COMPILER_ID}")
 message(STATUS "C++ Flags: ${CMAKE_CXX_FLAGS} linker flags: ${CMAKE_CXX_LINK_FLAGS}")
 
-set(PROBLEMS problem1 problem2 problem3 problem4 problem5
-       	problem6 problem7)
+set(number 1)
+WHILE (number GREATER 0 AND number LESS 9)
+  set(PROBLEMS ${PROBLEMS} "problem${number}")
+  MATH( EXPR number "${number} + 1")
+ENDWHILE ()
 
 add_subdirectory(deps/athene)
 
